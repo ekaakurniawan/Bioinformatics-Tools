@@ -48,6 +48,7 @@ def getMaxScore(i, j):
         m = S[i-1][j-1] + 1
     else:
         m = S[i-1][j-1] - mu
+
     scores = [S[i-1][j] - sigma,
               S[i][j-1] - sigma,
               m]
@@ -76,7 +77,6 @@ def updateSequence(seq, p, indx, i, j):
 def traceBack(i, j, p, indx, d):
     global t
     while (i is not 0) or (j is not 0):
-        print "%s, %s, %s" % (p, i, j)
         if d == 0: d = D[i][j]
         
         if d == 1:
