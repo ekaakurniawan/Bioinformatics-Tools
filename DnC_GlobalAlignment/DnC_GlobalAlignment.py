@@ -124,7 +124,7 @@ def generateSequence():
 
                 startIndx = k_indx + K[k_indx:].index(i)
                 maxVal = max(D[startIndx:startIndx+total])
-                R[1] += [k_indx + D[startIndx:startIndx+total].index(maxVal) + 2]
+                R[1] += [indx + D[startIndx:startIndx+total].index(maxVal) + 1]
                 
                 indx += total
                 k_indx += total
