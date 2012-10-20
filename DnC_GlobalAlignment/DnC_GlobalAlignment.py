@@ -15,6 +15,8 @@
 # Free Software Foundation, Inc.,
 # 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
+# Global Alignment in Linear Space - Divide and Conquer (Hirschberg's Algorithm)
+
 import copy
 
 # Seq1 = "CACCC"
