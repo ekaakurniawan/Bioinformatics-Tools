@@ -22,6 +22,18 @@
 #  - http://en.wikipedia.org/wiki/Genetic_algorithm
 #  - http://www.mathworks.com/videos/optimal-component-selection-using-the-mixed-integer-genetic-algorithm-68956.html
 
+# Tested on:
+#  - Python 2.7.3
+#  - NumPy 1.6.2
+#  - MatPlotLib 1.1.1
+
+# TODO:
+#  - Selection: Use random method to choose between elite and non-elite for
+#               breeding (elite has higher chance)
+#  - Breeding: Modify the script to produce two offsprings instead of one
+#  - Migration: Adding migration event (fraction is 0.2 and interval is every
+#               20 generations)
+
 DEBUG = 1
 
 import sys
@@ -84,7 +96,7 @@ def evaluateFitness(comunity, pop_num, pop_size, elite_cnt, \
         for y in xrange(pop_size):    
             Vnew = voltageCurve(Tdata, comunity[x][y], Res, ThVal, ThBeta)
             score[x][y] = sum(((Vdata - Vnew) ** 2) / V_len)
-    # Get minimum three
+    # Get minimum
     elite_set = zeros((pop_num, elite_cnt, 6))
     elite_score = zeros((pop_num, elite_cnt))
     for x in xrange(pop_num):
@@ -222,6 +234,7 @@ def main(args):
     #  - Initial Population                 : pop_num
     #  - Migration Direction
     #  - Migration Fraction
+    #  - Migration Interval
     #  - Muation Function                   : Uniform
     #  - Output Function
     #  - Population Size                    : pop_size
