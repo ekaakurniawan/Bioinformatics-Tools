@@ -18,6 +18,9 @@
 # Block Alignment using Look Up Table - Divide and Conquer
 # Sub-quadratic Time
 
+# TODO:
+#  - Adding backtracking
+
 import math
 
 # Seq1 = "CACCC"
