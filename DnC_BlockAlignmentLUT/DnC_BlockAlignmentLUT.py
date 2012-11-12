@@ -18,6 +18,9 @@
 # Block Alignment using Look Up Table - Divide and Conquer
 # Sub-quadratic Time
 
+# References:
+#  - Neil C. Jones, Pavel A. Pevzner. An Introduction to Bioinformatics Algorithms. Cambridge: The MIT Press, 2004.
+
 # TODO:
 #  - Adding backtracking
 

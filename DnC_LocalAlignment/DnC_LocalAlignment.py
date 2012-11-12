@@ -17,6 +17,9 @@
 
 # Local Alignment in Linear Space - Divide and Conquer
 
+# References:
+#  - Neil C. Jones, Pavel A. Pevzner. An Introduction to Bioinformatics Algorithms. Cambridge: The MIT Press, 2004.
+
 import copy
 
 # Seq1 = "CACCC"

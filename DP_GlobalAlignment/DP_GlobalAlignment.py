@@ -17,6 +17,9 @@
 
 # Global Alignment - Dynamic Programming
 
+# References:
+#  - Neil C. Jones, Pavel A. Pevzner. An Introduction to Bioinformatics Algorithms. Cambridge: The MIT Press, 2004.
+
 import copy
 
 # Seq1 = "AAGC"
