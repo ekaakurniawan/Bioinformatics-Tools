@@ -34,8 +34,10 @@
 # total15 =  2.5920e+14
 # log2(total15) = 47.881 = 48 bits
 #
-# Note: The formula is intended for FPGA implementation or any other devices
-#       performing one LFSR operation per clock.
+# Note:  - The formula is intended for FPGA implementation or any other devices
+#          performing one LFSR operation per clock.
+#        - The implementation follows Wikipedia version (using XOR) instead of
+#          Xilinx version (using XNOR).
 #
 # References:
 #  - http://en.wikipedia.org/wiki/Linear_feedback_shift_register
