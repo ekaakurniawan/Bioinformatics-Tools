@@ -79,7 +79,7 @@ class InfinitePotentialWell:
     # Dimensionless field unit (f)
     def dimensionless_field_unit(self, actual_field = None):
         # Actual field (E)
-        return actual_field / self.unit_energy
+        return actual_field / self.unit_energy()
 
     # Actual field (E)
     def actual_field(self, dimensionless_field_unit = None):
