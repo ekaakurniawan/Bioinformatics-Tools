@@ -64,17 +64,13 @@ class InfinitePotentialWell:
         self.h_bar = h_bar
 
     # Return eigenenergy or eigenvalue
-    def eigenenergy(self, n = None):
-        # Energy eigenstate (integer starts from 1, dimensionless)
-        if n == None:
-            n = self.n
-
-        return ((self.h_bar ** 2) * (n ** 2) * (self.PI_SQ)) / \
+    def eigenenergy(self):
+        return ((self.h_bar ** 2) * (self.n ** 2) * (self.PI_SQ)) / \
                (2 * self.particle.mass * (self.L ** 2))
 
     # Unit energy of potential charge from one side to another (E_0)
     def unit_energy(self):
-        return self.eigenenergy(n = 1) / (self.particle.e * self.L)
+        return self.eigenenergy() / (self.particle.e * self.L)
 
     # Dimensionless field unit (f)
     def dimensionless_field_unit(self, actual_field = None):
