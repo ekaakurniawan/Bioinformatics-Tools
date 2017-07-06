@@ -1,6 +1,6 @@
 Collection of Tools and Algorithms in Bioinformatics
 
-* Equation/Algorithm
+* Equations/Algorithms
   * [Likelihood-Ratio Test](https://github.com/ekaakurniawan/Bioinformatics-Tools/blob/master/ComputationalBiology/Likelihood_Ratio_Test.py)
   * [Genetic Algorithm Implementation for Optimizing Component Selection](https://github.com/ekaakurniawan/Bioinformatics-Tools/tree/master/GA_ComponentSelection)
   * [Pseudo-Random Number Generator using Linear Feedback Shift Register (LFSR)](https://github.com/ekaakurniawan/Bioinformatics-Tools/tree/master/RNG_LFSR)
