@@ -1,5 +1,3 @@
-# Bioinformatics Tools
-
 Collection of Tools and Algorithms in Bioinformatics
 
 * Equation/Algorithm
